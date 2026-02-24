@@ -6,32 +6,39 @@ export function HeroSection04() {
     return (
         <section className="min-h-screen overflow-hidden relative py-20">
             <div className="mx-auto max-w-7xl relative z-20 px-6">
-                <div className="relative ">
+                <div className="relative">
                     <p className="text-sm absolute -top-4 left-20 font-medium tracking-wider">
                         1,996
                     </p>
+                    {/* Single responsive heading — no duplicate needed */}
                     <h1
-                        className={`z-20 text-primary relative font-bold text-center tracking-[-7px] text-7xl md:text-9xl xl:tracking-[-1rem] md:tracking-[-14px] xl:text-[10rem] pb-8`}
+                        className="z-20 text-primary relative font-bold text-center
+                            tracking-tighter
+                            text-[clamp(1.8rem,8vw,10rem)]
+                            sm:tracking-[-3px]
+                            md:tracking-[-8px]
+                            xl:tracking-[-1rem]
+                            pb-8"
                     >
                         CREATIVE TECHNOLOGIST
                     </h1>
-                    <p className="text-4xl hidden xl:block absolute -bottom-12 right-0 font-thin tracking-[6px]">
+                    <p className="text-2xl sm:text-4xl hidden xl:block absolute -bottom-12 right-0 font-thin tracking-[4px] sm:tracking-[6px]">
                         SWASTIK BHATI
                     </p>
-                    <p className="text-4xl absolute xl:hidden -bottom-12 left-0 font-thin tracking-[6px]">
+                    <p className="text-2xl sm:text-4xl absolute xl:hidden -bottom-8 sm:-bottom-12 left-0 font-thin tracking-[4px] sm:tracking-[6px]">
                         SWASTIK BHATI
                     </p>
                 </div>
 
                 <div className="grid relative">
                     <div className="space-y-8 pt-20 flex gap-6 justify-center">
-                        <div className="flex gap-6 bg-secondary w-full max-w-xl h-fit p-10 items-end space-y-2 text-xl font-bold md:text-2xl lg:text-3xl">
+                        <div className="flex gap-6 bg-secondary w-full max-w-xl h-fit p-6 md:p-10 items-end space-y-2 text-xl font-bold md:text-2xl lg:text-3xl">
                             <div className="font-semibold text-xl">
                                 <div>/ AI/ML DESIGNER</div>
                                 <div>/ WEB DESIGN (UX/UI)</div>
                                 <div>/ WEB DEVELOPMENT</div>
                             </div>
-                            <div className="absolute hidden  md:flex left-1/2 -top-10 w-fit overflow-hidden bg-secondary">
+                            <div className="absolute hidden md:flex left-1/2 -top-10 w-fit overflow-hidden bg-secondary">
                                 <img
                                     src="/portrait.jpg"
                                     alt="Designer portrait"
@@ -77,14 +84,14 @@ export function HeroSection04() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="w-60 h-36 absolute left-6 -top-6  shadow-lg border rounded-md overflow-hidden mb-8 md:mb-0">
+                        <div className="w-60 h-36 absolute left-6 -top-6 shadow-lg border rounded-md overflow-hidden mb-8 md:mb-0">
                             <img
                                 src="https://raw.githubusercontent.com/aliimam-in/aliimam/refs/heads/main/apps/www/public/templates/dalim-www.jpg"
                                 alt="Portfolio"
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="w-60 h-36 absolute left-12 -top-12  shadow-lg border rounded-md overflow-hidden mb-8 md:mb-0">
+                        <div className="w-60 h-36 absolute left-12 -top-12 shadow-lg border rounded-md overflow-hidden mb-8 md:mb-0">
                             <img
                                 src="https://raw.githubusercontent.com/aliimam-in/aliimam/refs/heads/main/apps/www/public/templates/dalim-www.jpg"
                                 alt="Portfolio"
@@ -101,9 +108,7 @@ export function HeroSection04() {
                         </div>
 
                         <div className="mt-3 md:text-right">
-                            <h2
-                                className={`text-5xl uppercase tracking-[-4px]`}
-                            >
+                            <h2 className="text-5xl uppercase tracking-[-4px]">
                                 Design without Limits
                             </h2>
                         </div>
@@ -249,99 +254,51 @@ export function HeroSection04() {
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            {/* Grid background — light */}
             <div
                 className="absolute block dark:hidden inset-0 z-0"
                 style={{
                     backgroundImage: `
-        linear-gradient(to right, #e5e5e5 1px, transparent 1px),
-        linear-gradient(to bottom, #e5e5e5 1px, transparent 1px)
-      `,
+                        linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+                        linear-gradient(to bottom, #e5e5e5 1px, transparent 1px)
+                    `,
                     backgroundSize: "20px 20px",
-                    backgroundPosition: "0 0, 0 0",
                     maskImage: `
-        repeating-linear-gradient(
-              to right,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            repeating-linear-gradient(
-              to bottom,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
-      `,
+                        repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+                        repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+                        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
+                    `,
                     WebkitMaskImage: `
- repeating-linear-gradient(
-              to right,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            repeating-linear-gradient(
-              to bottom,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
-      `,
+                        repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+                        repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+                        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
+                    `,
                     maskComposite: "intersect",
                     WebkitMaskComposite: "source-in",
                 }}
             />
 
+            {/* Grid background — dark */}
             <div
                 className="absolute hidden dark:block inset-0 z-0"
                 style={{
                     backgroundImage: `
-        linear-gradient(to right, #404040 1px, transparent 1px),
-        linear-gradient(to bottom, #404040 1px, transparent 1px)
-      `,
+                        linear-gradient(to right, #404040 1px, transparent 1px),
+                        linear-gradient(to bottom, #404040 1px, transparent 1px)
+                    `,
                     backgroundSize: "20px 20px",
-                    backgroundPosition: "0 0, 0 0",
                     maskImage: `
-        repeating-linear-gradient(
-              to right,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            repeating-linear-gradient(
-              to bottom,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
-      `,
+                        repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+                        repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+                        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
+                    `,
                     WebkitMaskImage: `
- repeating-linear-gradient(
-              to right,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            repeating-linear-gradient(
-              to bottom,
-              black 0px,
-              black 3px,
-              transparent 3px,
-              transparent 8px
-            ),
-            radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
-      `,
+                        repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+                        repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+                        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)
+                    `,
                     maskComposite: "intersect",
                     WebkitMaskComposite: "source-in",
                 }}
