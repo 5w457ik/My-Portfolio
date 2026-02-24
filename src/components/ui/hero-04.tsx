@@ -8,7 +8,7 @@ export function HeroSection04() {
             <div className="mx-auto max-w-7xl relative z-20 px-6">
                 <div className="relative">
                     <p className="text-sm absolute -top-4 left-20 font-medium tracking-wider">
-                        1,996
+                        2,009
                     </p>
                     {/* Single responsive heading — no duplicate needed */}
                     <h1
