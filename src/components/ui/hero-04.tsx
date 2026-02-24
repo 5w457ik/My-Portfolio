@@ -50,7 +50,7 @@ export function HeroSection04() {
                             className="h-100 w-full object-contain grayscale"
                         />
                         <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-widest">
-                            BASED IN FARIDABAD
+                            BASED IN INDIA
                         </div>
                     </div>
                 </div>
